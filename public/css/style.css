@@ -1,0 +1,279 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* NAVBAR */
+
+.navbar{
+    min-height:5rem;
+}
+
+.container-fluid{
+    display:flex;
+    align-items:center;
+}
+
+.fa-joomla{
+    color:#E5383B !important;
+    font-size:2rem !important;
+}
+
+.nav-link{
+    color:#0B090A !important;
+    font-size:1.4rem !important;
+}
+
+.desktop-layout{
+    flex:1;
+    display:flex;
+    align-items:center;
+}
+
+.desktop-left,
+.desktop-right{
+    display:flex;
+    gap:1rem;
+}
+
+.desktop-right{
+    margin-left:auto;
+}
+
+.navbar-search{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.search-bar{
+    width:320px;
+    text-align:center;
+    border-radius:0.5rem !important;
+}
+
+.btn-search{
+    width:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 !important;
+}
+
+.btn-search i{
+    margin:0 !important;
+    font-size:1.3rem;
+}
+
+.mobile-links{
+    text-align:center;
+    padding:1rem;
+}
+
+.mobile-links .nav-link{
+    padding:0.75rem 0;
+}
+
+/* MOBILE */
+
+@media(max-width:767px){
+
+    .navbar-search-mobile{
+        flex:1;
+        margin:0 1rem 0 0.25rem;
+    }
+
+    .navbar-search-mobile .search-bar{
+        width:100%;
+    }
+
+    .navbar-toggler{
+        flex-shrink:0;
+    }
+}
+
+/* Footer */
+.f-info {
+    text-align: center;
+    height: 7rem;
+    background-color: #F5F3F4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-socials, .f-info-text, .f-info-links {
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+}
+
+.f-info-text { 
+    font-size: 1.3rem;
+}
+
+.f-info-links a {
+    margin-right: 1.5rem;
+}
+
+.f-info a {
+    text-decoration: none;
+    color : #171314;
+}
+
+.f-info a:hover {
+    color: #E5383B;
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    margin-bottom: 2rem;
+    border: none !important;
+    background-color: #FDFDFD !important;
+}
+
+.brd {
+    border: 1px solid #171314 !important;
+    border-radius: 0.7rem !important;
+}
+
+.brd:hover {
+    background-color: #e0e0e03f !important;
+}
+
+/* .card:hover {
+    background-color: #e0e0e03f !important;
+} */
+
+.card-img-top {
+    border-radius: 0.7rem !important;
+    width: 100%;
+    height: 20rem !important;
+}
+
+.card-body {
+    padding: 1rem !important;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+    text-decoration: none !important;
+}
+
+.card-link {
+    text-decoration: none !important;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.5;
+    background-color: #e0e0e064;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: #FDFDFD;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 0;
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Buttons */
+.btn {
+    background-color : #E5383B !important;
+    border: none !important;
+}
+
+.btn:hover {
+    /* background-color : #e5383bc1 !important; */
+    opacity: 0.6;
+}
+
+.btn-danger {
+    background-color : #B00020 !important;
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh !important;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-signup {
+    background-color: #28a746c9 !important;
+}
+
+.btn-login {
+    background-color: #007bffc9 !important;
+}
+
+.btn-search {
+    padding: 0 1rem 0 1rem !important;
+}
+
+.btn-search i {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.signUPlink {
+    color: #8c5f8d !important;
+    text-decoration: none;
+}
+
+.signUPlink:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+/* Remove arrows from Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows from Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}

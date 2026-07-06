@@ -1,0 +1,69 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+        <div class="col-10 col-md-8 mx-auto">
+            <h1 class="mb-4 mt-5">Create New Listing</h1>
+            <form method="POST" action="/listings/createNew" class="needs-validation" novalidate 
+            enctype="multipart/form-data">      <!--novalidate removes default HTML5 validation, allowing us to use Bootstrap's custom validation styles -->
+                <div class="form-group mb-3">
+                    <label for="title" class="form-label"><b>Title:</b></label>
+                    <input type="text" id="title" placeholder="Enter listing title" name="listing[title]" required class="form-control">
+                    <div class="invalid-feedback">
+                        Please enter a title.
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="description" class="form-label"><b>Description:</b></label>
+                    <textarea id="description" placeholder="Enter listing description" name="listing[description]" rows="4" cols="50" class="form-control" required></textarea>
+                    <div class="invalid-feedback">
+                        Please provide a description.
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="imageUrl" class="form-label"><b>Upload Image:</b></label>
+                    <div class="form-text mb-2">
+                        Accepted formats: JPG, JPEG, PNG • Maximum size: 2 MB
+                    </div>
+                    <input type="file" id="imageUrl" name="listing[image]" class="form-control" accept=".jpg,.jpeg,.png" required>
+                    <div class="invalid-feedback">
+                        Please provide an image.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group mb-3 col-md-5">
+                        <label for="price" class="form-label"><b>Price (₹):</b></label>
+                        <input id="price" type="number" placeholder="Enter price" name="listing[price]" required class="form-control">
+                        <div class="invalid-feedback">
+                            Please enter a valid price.
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3 col-md-7">
+                        <label for="country" class="form-label"><b>Country:</b></label>
+                        <input type="text" id="country" placeholder="Enter country" name="listing[country]" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please enter a country.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="location" class="form-label"><b>Location:</b></label>
+                    <input type="text" id="location" placeholder="Enter location" name="listing[location]" required class="form-control">
+                    <div class="invalid-feedback">
+                        Please enter a location.
+                    </div>
+                </div>
+
+                <div class="d-grid d-md-block mt-4 mb-5 mb-md-0">
+                    <button type="submit" class="btn btn-primary">Create Listing</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/imageValidation.js"></script>
+</body>
