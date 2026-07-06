@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ishban2006/AirBNB.git"
+    "url": "git+https://github.com/Harsh-pf14/AirBNB-Website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/ishban2006/AirBNB/issues"
+    "url": "https://github.com/Harsh-pf14/AirBNB-Website/issues"
   },
-  "homepage": "https://github.com/ishban2006/AirBNB#readme",
+  "homepage": "https://github.com/Harsh-pf14/AirBNB-Website#readme",
   "dependencies": {
-    "cloudinary": "^2.10.0",
+    "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^6.0.0",
     "cookie-parser": "^1.4.7",
@@ -34,7 +34,8 @@
     "express-session": "^1.19.0",
     "joi": "^18.2.1",
     "method-override": "^3.0.0",
-    "mongoose": "^9.5.0",
+    "mongodb": "^7.4.0",
+    "mongoose": "^8.15.0",
     "multer": "^2.1.1",
     "multer-storage-cloudinary": "^4.0.0",
     "passport": "^0.7.0",
