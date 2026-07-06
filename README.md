@@ -88,8 +88,8 @@ A full-stack property rental platform inspired by Airbnb where users can explore
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/ishban2006/AirBNB.git
-cd AirBNB
+git clone https://github.com/Harsh-pf14/AirBNB-Website.git
+cd AirBNB-Website
 ```
 
 ### Install Dependencies
